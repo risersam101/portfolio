@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: "Montserrat";
   text-align: center;
@@ -9,6 +13,47 @@ h1,h2,h3,h4,h5,h6{
 
 p{
   color: #8f8f8f;
+}
+
+.hero {
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  
+  /* Background styles */
+  background-image: url("https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero h1 {
+  font-size: 5em;
+  color:  #fff;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5em;
+}
+
+.hero .btn {
+  display: block;
+  width: 200px;
+  
+  padding: 1em;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  
+  border: 2px solid white; /* CHANGE THIS LINE */
+  border-radius: 25px;
 }
 
 /* Headings */
@@ -113,16 +158,6 @@ background-image: url('D:/verzeo/assignment_1/images/pic2.jpg');
   font-size: 1.5rem;
 }
 
-#press{
-    background-color: #241663;
-    padding-bottom: 3%;
-}
-
-.press-logo{
-  width: 15%;
-  margin: 20px 20px 50px;
-}
-
 /* Pricing section */
 #projects{
   padding: 0rem;
@@ -147,13 +182,12 @@ background-image: url('D:/verzeo/assignment_1/images/pic2.jpg');
   margin: 20px 10px;
 }
 
-@media (max-width:1028px) {
-  #title{
-    text-align: center;
-  }
+.icon{
+  color: #fff;
+  margin-bottom: 1rem;
+}
 
-  .title-image{
-    position: static;
-    transform: rotate(0);
-  }
+.icon:hover{
+  background-color: #fff;
+  color: #000;
 }
